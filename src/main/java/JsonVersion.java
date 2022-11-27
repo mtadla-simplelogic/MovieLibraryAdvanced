@@ -11,7 +11,9 @@ public class JsonVersion {
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 
         File file  = new File("src/main/resources/movies.json");
+
         MovieLibrary movieLibrary = objectMapper.readValue(file, MovieLibrary.class);
+
         System.out.println(movieLibrary);
     }
 }
