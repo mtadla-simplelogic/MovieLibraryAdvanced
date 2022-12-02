@@ -13,15 +13,15 @@ Następwnie użytkownik podaje wybranu numer, pobierz go używając klasy Scanne
 
 Komentarz do opcji 2: Wyświetlenie wszystkich informacji o filmie rozumiem jako wypisanie ich np. w takim formacie:
 
-   title: The Shawshank Redemption
+   - title: The Shawshank Redemption
 
-   director: Frank Darabont
+   - director: Frank Darabont
 
-   genre: drama
+   - genre: drama
 
-   date: 1994
+   - date: 1994
 
-   actors: Tim Robbins, Morgan Freeman, Bob Gunton
+   - actors: Tim Robbins, Morgan Freeman, Bob Gunton
 
 
 Powyższy efekt powinien być uzyskany poprzez nadpisania metody toString() w klasach typu Movie, Actor itd..
