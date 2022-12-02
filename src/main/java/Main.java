@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 
-public class JsonVersion {
+public class Main {
     public static void main(String[] args) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
@@ -14,6 +14,6 @@ public class JsonVersion {
 
         MovieLibrary movieLibrary = objectMapper.readValue(file, MovieLibrary.class);
 
-        System.out.println(movieLibrary);
+        System.out.println(movieLibrary.getMovies().get(0).getTitle());
     }
 }
